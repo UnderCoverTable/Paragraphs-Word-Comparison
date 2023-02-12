@@ -1,0 +1,117 @@
+body{
+    background-image: url("./background.webp");
+    background-position: center;
+
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 1px dashed black; */
+}
+
+h3{
+    text-align: center;
+}
+
+#text1,#text2,#text3{
+    padding: 10px;;
+}
+
+#p1,#p2,#p3{
+    background-color: #efded6;
+    border-radius: 4px;
+
+    padding: 10px;
+    border: 1px solid rgb(216, 112, 147);
+
+	box-shadow:  
+         -1px 1px rgb(216, 112, 147),
+		 -2px 2px rgb(216, 112, 147),
+		 -3px 3px rgb(216, 112, 147),
+		 -4px 4px rgb(216, 112, 147),
+		 -5px 5px rgb(216, 112, 147);
+        
+
+
+}
+#p1:focus ,#p2:focus ,#p3:focus {
+    outline-color:rgba(216, 112, 147, 0.521);
+
+}
+
+#p2{
+    background-color: #ede3db;
+
+}
+
+#p3{
+    background-color: #eae9e5;
+
+}
+
+.container{
+    text-align: center;
+    /* border: 1px dashed black; */
+    padding: 50px;
+}
+
+#main-button1{
+    display: flex;
+    position: relative;
+    left: 45%;
+
+    background: linear-gradient(127deg, rgba(255,206,220,1) 0%, rgba(233,211,223,1) 31%, rgba(193,221,229,1) 100%, rgba(183,223,230,1) 100%);    border: 2px solid rgba(121, 24, 56, 0.651);
+    border-radius: 8px;
+
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    align-items: center;
+
+
+    height: 48px;
+    max-width: 100%;
+    
+    padding: 0px 25px 0px 25px;
+    
+}
+
+#main-button1:after {
+    background: linear-gradient(127deg, rgba(255,206,220,1) 0%, rgba(233,211,223,1) 31%, rgba(193,221,229,1) 100%, rgba(183,223,230,1) 100%);    border-radius: 8px;
+    border: 1px solid rgba(121, 24, 56, 0.651);
+    content: "";
+  
+    height: 48px;
+    width: 100%;
+  
+    position: absolute;
+    left: 0;
+    top: -2px;
+    
+    transform: translate(-8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+#main-button1:hover:after {
+    transform: translate(-6px, 6px);
+}
+
+#main-button1:active:hover:after {
+    transform: translate(0, 0);
+}
+  
+
+#a1,#a2,#a3{
+    text-align: center;
+    height: 100%;
+    width: 350px;
+    /* border: 1px dashed black; */
+}
+
+#a4{
+    text-align: center;
+    height: 100%;
+}
